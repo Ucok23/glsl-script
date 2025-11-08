@@ -1,0 +1,30 @@
+{
+  "name": "glsl-script",
+  "private": false,
+  "version": "0.0.1",
+  "description": "A lightweight, declarative WebGL2 micro-framework for modern browsers. It simplifies shader-centric programming by abstracting boilerplate, letting you focus on GLSL.",
+  "author": "Ucok Isa Lubis <ulubis98@gmail.com>",
+  "type": "module",
+  "main": "./dist/glsl-script.umd.js",
+  "module": "./dist/glsl-script.es.js",
+  "types": "./dist/glsl.d.ts",
+  "license": "MIT",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "prepublishOnly": "npm run build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@types/node": "^24.10.0",
+    "typescript": "~5.9.3",
+    "vite": "^7.1.7"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/user/glsl-script.git"
+  }
+}
