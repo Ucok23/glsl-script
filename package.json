@@ -1,7 +1,7 @@
 {
   "name": "glsl-script",
   "private": false,
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A lightweight, declarative WebGL2 micro-framework for modern browsers. It simplifies shader-centric programming by abstracting boilerplate, letting you focus on GLSL.",
   "author": "Ucok Isa Lubis <ulubis98@gmail.com>",
   "type": "module",
