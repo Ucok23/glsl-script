@@ -1,4 +1,5 @@
 import { defineConfig } from 'vite';
+import dts from 'vite-plugin-dts';
 import { resolve } from 'path';
 import { fileURLToPath } from 'url';
 
@@ -12,5 +13,12 @@ export default defineConfig({
       name: 'glsl-script',
       fileName: (format) => `glsl-script.${format}.js`,
     },
+    rollupOptions: {
+      external: ['path', 'url']
+    }
   },
+  plugins: [dts({
+    outDir: 'dist',
+    include: ['src']
+  })],
 });
